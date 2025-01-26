@@ -1,0 +1,125 @@
+.posteventpage{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    row-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.379);
+    border-radius: 1rem;
+    overflow-y: auto;
+
+
+    #closebtn{
+        position: absolute;
+        font-size: 2rem;
+        top: 5%;
+        left: 94%;
+    }
+
+    h1{
+        font-size: 1.75rem;
+    }
+
+    .poster{
+        margin-top: 1rem;
+        display: flex;
+        position: relative;
+
+        label{
+            position: relative;
+            width: 10rem;
+            height: 5rem;
+            background-color: rgba(15, 0, 128, 0.293);
+            border: 2px solid rgba(0, 0, 255, 0.307);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        input{
+            position: absolute;
+            display: none;
+            font-size: .5rem
+        }
+        
+    }
+
+
+    .event-desc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        input{
+            width: 45%;
+            height: 3rem;
+            border: none;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-weight: 700;
+            outline: none;
+            background-color: rgba(128, 128, 128, 0.212);
+        }
+        textarea{
+            width: 45%;
+            height: 10rem;
+            border: none;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-weight: 700;
+            outline: none;
+            background-color: rgba(128, 128, 128, 0.212);
+        }
+    }
+    button{
+        width: 5rem;
+        height: 2.5rem;
+        border: none;
+        background-color: var(--purple-color);
+        color: white;
+        font-weight: 700;
+        border-radius: .5rem;
+
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .posteventpage{
+       padding: .5rem;
+
+
+       #closebtn{
+        display: none;
+       }
+       h1{
+        font-size: 1.45rem;
+        margin-top: 1rem;
+       }
+
+
+       .event-desc{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+
+        input{
+            width: 90%;
+        }
+        textarea{
+            width: 90%;
+        }
+       }
+       button{
+        height: 2.5rem;  
+        width: 90%;   
+            margin-bottom: 3rem;
+            flex-shrink: 0;
+       }
+    }
+}
