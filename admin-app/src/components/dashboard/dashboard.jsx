@@ -10,6 +10,8 @@ import DashMain from "../dashmain/dashmain";
 
 const Dashboard = () => {
 
+  const[isNavOpen, setisNavOpen] = useState(false);
+
   const [currentPage, setcurrentPage] = useState("home");
 
   const renderContent = () => {
@@ -24,7 +26,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <div className="dashboard-nav">
+      <div className="dashboard-nav"> 
         <div className="nav">
           <div className="circle home-icon" onClick={()=>setcurrentPage("home")}>
             <HiOutlineHome />
