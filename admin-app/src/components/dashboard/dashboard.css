@@ -9,14 +9,12 @@
     overflow-x: hidden;
     overflow-y: hidden;
 
-
     .dashboard-nav{
         width: 10%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-
 
         .nav{
             width: 65%;
@@ -96,7 +94,7 @@
             position: absolute;
             bottom: 0%;
             background-color: transparent;
-
+            margin-top: auto;
 
             .nav{
                 width: 100%;
@@ -107,11 +105,10 @@
                 flex-direction: row;
                 justify-content: space-evenly;
 
-
                 .circle{
-                            transform: translateY(-.75rem);
+                    transform: translateY(-.75rem);
                     &.scan{
-                        transform: scale(1.15);
+                        transform: scale(1.25);
                         margin-top: -2rem;
                     }
                 }
@@ -129,8 +126,5 @@
                     height: 100%;
                 }
           }
-
-
-         
     }
 }
