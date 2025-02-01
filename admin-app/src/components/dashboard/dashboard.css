@@ -86,8 +86,8 @@
 @media only screen and (min-width: 320px) and (max-width: 480px){
       
 .dashboard{
-          flex-direction: column-reverse;
-          overflow-y: none;
+    width: 100vw;
+    height: 100vh;
     
         .dashboard-nav{
             width: 100%;
