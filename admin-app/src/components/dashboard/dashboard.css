@@ -68,6 +68,7 @@
     .dash-header{
         width: 95%;
         bottom:2%;
+        margin-top: auto;
 
         ul{
             width: 70%;
