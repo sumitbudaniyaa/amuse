@@ -1,6 +1,5 @@
 import './postevent.css'
 import { IoMdAdd } from "react-icons/io";
-import { IoMdClose } from "react-icons/io";
 
 
 const PostEvent = ({setcurrentPage}) =>{
@@ -10,11 +9,10 @@ const PostEvent = ({setcurrentPage}) =>{
 
         <div className="posteventpage">
 
-        <IoMdClose id='closebtn' onClick={()=>setcurrentPage("home")}/>
             <h1>Fill out the Event Details</h1>
 
             <div className="poster">
-            <label htmlFor="poster-upload"><IoMdAdd /> <p>Add Poster</p></label>
+            <h1><IoMdAdd /> <p>Add Poster</p></h1>
             <input type="file" id='poster-upload'/>
             </div>
 
@@ -29,7 +27,7 @@ const PostEvent = ({setcurrentPage}) =>{
             <input type="number" placeholder='Price'/>
             <textarea name="about" id="about" rows="10"  placeholder='Write something about the event'></textarea>
 </div>
-<button>Submit</button>
+
         </div>
        </>
     )

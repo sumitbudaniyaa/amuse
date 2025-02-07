@@ -1,128 +1,76 @@
 .dashboard{
     width: 100vw;
     height: 100vh;
-    background-color:rgba(162, 163, 165, 0.326);
+    background-color: rgba(32, 31, 31, 0.138);
+}
+
+
+.dash-header{
+    width: 30%;
+    height: 4rem;
+    background-color: white;
+    position: absolute;
+    bottom: 3%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
     display: flex;
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-style: normal;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    align-items: center;
 
-    .dashboard-nav{
-        width: 10%;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 50%;
+        justify-content: space-between;
 
-        .nav{
-            width: 65%;
-            height: 80%;
-            border-radius: 2rem;
-            background-color: white;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+        li{
+            color: grey;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            row-gap: 1rem;
-
-            .circle{
-                width: 2.75rem;
-                height: 2.75rem;
-                background-color: rgba(128, 128, 128, 0.216);
-                border-radius: 2rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.25rem;
-                color: grey;
-                transition: .20s all linear;
-
-                &.home-icon{
-                    background-color: black;
-                    color: white;
-                }
-
-                &.account{
-                        background-color: black;
-                        color: white;
-                }
-
-                &.postevent{
-                  background-color: var(--purple-color);
-                  color: white;
-                }
-
-                &.logout{
-                    background-color: rgba(255, 0, 0, 0.725);
-                    color: white;
-                }
-
-                &.scan{
-                    background-color: green;
-                    color: white;
-                }
-            }
         }
-    }
 
-    .dashboard-body{
-        width: 90%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        #home-icon{
+            font-size: 1.75rem;
+        }
 
-        .dash-main{
-          width: 95%;
-          height: 95%;
+        #user-icon{
+            font-size: 1.5rem;
+        }
+
+        #scan-icon{
+            font-size: 1.5rem;
+        }  
+
+        button{
+            width: 6rem;
+            height: 2.5rem;
+            border: none;
+            border-radius: .5rem;
+            background-color: var(--purple-color);
+            color: white;
+            font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  outline: none;
+        }
+
+        .submitbtn{
+            background-color: green;
         }
     }
 }
 
+
 @media only screen and (min-width: 320px) and (max-width: 480px){
-      
-.dashboard{
-    width: 100vw;
-    height: 100vh;
-    
-        .dashboard-nav{
-            width: 100%;
-            height: 3rem;
-            position: absolute;
-            bottom: 0%;
-            background-color: transparent;
+    .dash-header{
+        width: 95%;
+        bottom:2%;
 
-        .nav{
-                width: 100%;
-                height: 100%;
-                border-radius: 1rem;
-                border-bottom-right-radius: 0;
-                border-bottom-left-radius: 0;
-                flex-direction: row;
-                justify-content: space-evenly;
-
-                .circle{
-                    transform: translateY(-.75rem);
-                    &.scan{
-                        transform: scale(1.25);
-                        margin-top: -2rem;
-                    }
-                }
-            }
+        ul{
+            width: 70%;
         }
-
-        .dashboard-body{
-                width: 100%;
-                height: 100%;
-
-                .dash-main{
-                    width: 100%;
-                    height: 100%;
-                }
-          }
     }
 }
