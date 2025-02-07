@@ -12,16 +12,16 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="home">
+      
            <Login />
-         </div>
+       
           }
         ></Route>
         
         <Route path="/signup" element={
-          <div className="home">
+         
           <SignUp />
-          </div>
+        
         }>
         </Route>
         <Route path="/dashboard" element={
