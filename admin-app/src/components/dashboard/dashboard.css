@@ -9,7 +9,7 @@
     width: 30%;
     height: 4rem;
     background-color: white;
-    position: sticky;
+    position: sticky; 
     bottom: 3%;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -72,6 +72,10 @@
 
         ul{
             width: 70%;
+
+            button{
+                margin-bottom: 15rem;
+            }
         }
     }
 }
