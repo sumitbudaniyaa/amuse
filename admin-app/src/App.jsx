@@ -6,7 +6,6 @@ function App() {
 
   return (
     <div className="dash">
-    <div className="dash-header"></div>
       <h1>
         hi Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
         doloremque quo illo nihil dolor similique, possimus itaque. Eum
