@@ -125,7 +125,7 @@ function App() {
         pariatur beatae, aliquid atque nobis dolor in impedit, cum
         reprehenderit quam accusamus maiores.
       </h1>
-      <div className="scan"></div>
+  
     </div>
   );
 }
