@@ -1,7 +1,8 @@
 .dash{
     width: 100%;
-    background-color: red;
+    background-color: pink;
     padding: 1rem;
+    scroll-behavior: smooth;
 }
 .dash-header{
     width: 100%;
