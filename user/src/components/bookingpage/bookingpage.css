@@ -1,0 +1,199 @@
+.booking-page{
+    width: 95%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    row-gap: 1rem;
+    
+    h4{
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        cursor: pointer;
+        text-decoration: underline;
+        
+     }
+
+
+    img{
+        width: 20rem;
+        height: 25rem;
+        border-radius: .5rem;
+    }
+
+    
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        color: white;
+    }
+
+    .info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        .description{
+          width: 45%;
+          min-height: 10rem;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: .5rem;
+          position: relative;
+          padding: .5rem;
+          font-family: 'Inter', sans-serif;
+          color: grey;
+          span{
+            position: absolute;
+            top: -12%;
+            left: 1%;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            font-size: .9rem;
+          }
+        }
+
+        .venue{
+            width: 15%;
+            min-height: 10rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: .5rem;
+            position: relative;
+            padding: .5rem;
+            font-family: 'Inter', sans-serif;
+            color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .map{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            span{
+              position: absolute;
+              top: -12%;
+              left: 1%;
+              color: white;
+              font-family: 'Inter', sans-serif;
+              font-weight: 200;
+              font-size: .9rem;
+            }
+        }
+
+        .artists{
+            width: 30%;
+            min-height: 10rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: .5rem;
+            position: relative;
+            padding: .5rem;
+            font-family: 'Inter', sans-serif;
+            color: grey;
+            span{
+              position: absolute;
+              top: -12%;
+              left: 1%;
+              color: white;
+              font-family: 'Inter', sans-serif;
+              font-weight: 200;
+              font-size: .9rem;
+            }
+        }
+    }
+
+
+    .book-tab{
+        width: 30%;
+        height: 5rem;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        justify-content: space-around;
+        p{
+            font-size: 1.5rem;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+        }
+        .quantity{
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+            p{
+                font-size: .9rem;
+                width: 3rem;
+            }
+            input{
+                width: 2rem;
+                height: 2rem;
+                border: none;
+                border-radius: .5rem;
+                background-color: rgb(48, 48, 48);
+                color: white;
+                padding-left: 20%;
+                font-size: 1.25rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 900;
+                outline: none;
+            }
+        }
+  
+        button{
+            width: 4rem;
+            background-color: white;
+        color: black; 
+           }
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .booking-page{
+        width: 98%;
+    }
+
+    h4{
+        display: none;
+    }
+    
+    img{
+        padding: 1rem;
+    }
+
+    h1{
+        font-size: 1.25rem;
+    }
+
+    .info{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+
+        .description, .venue, .artists {
+            width: 95% !important;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .book-tab{
+        width: 95% !important; 
+    }
+
+}
