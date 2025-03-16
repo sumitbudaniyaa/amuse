@@ -40,5 +40,9 @@ header{
         img{
             width: 3rem;
         }
+
+        button{
+            height: 50%;
+        }
     }
 }
