@@ -15,7 +15,7 @@ const Header = ({ isLoggedIn }) => {
         }}
       />
 
-        <User id="user-icon" color="white" size={30} />
+        <User id="user-icon" color="white" size={30} onClick={()=>navigate('/about')}/>
 
     </header>
   );

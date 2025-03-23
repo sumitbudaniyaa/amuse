@@ -6,6 +6,7 @@ import Header from './components/header/header'
 import { useState } from 'react'
 import CreateEventPage from './components/createeventpage/createeventpage'
 import ScanPage from './components/scanqrpage/scanpage'
+import About from './components/about/about'
 
 function App() {
  
@@ -22,6 +23,7 @@ function App() {
          <Route path='/dashboard' element={<Dashboard/>}></Route>
          <Route path='/create-event' element={<CreateEventPage />}></Route>
          <Route path='/validate-qr' element={<ScanPage />}></Route>
+         <Route path='/about' element={<About />}></Route>
       </Routes>
       </>
   )

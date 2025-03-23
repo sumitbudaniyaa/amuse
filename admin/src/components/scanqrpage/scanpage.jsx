@@ -4,6 +4,11 @@ import {ScanLine} from "lucide-react"
 
 
 const ScanPage = () => {
+
+  const videoConstraints = {
+    facingMode: "environment" 
+  };
+
   return(
 <div className="scan-page">
 
@@ -11,7 +16,7 @@ const ScanPage = () => {
 </button>
 
 <div className="cam">
-      <Webcam  id='webcam'/>
+      <Webcam videoConstraints={videoConstraints} id='webcam'/>
     </div>
      
     <div className="check-box">
