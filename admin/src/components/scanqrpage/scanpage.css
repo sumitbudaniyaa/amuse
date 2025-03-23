@@ -1,0 +1,58 @@
+.scan-page{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    justify-content: space-between;
+
+    button{
+        width: 8rem;
+        height: 2.5rem;
+        background-color: rgba(35, 75, 104, 0.693);
+        border: none;
+        border-radius: .25rem;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 55%;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        justify-content: space-around;
+    }
+
+    .cam{
+  width: 20rem;
+  height: 15rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  background-color: transparent;
+
+  
+        #webcam{
+           width: 100%;
+           height: 100%;
+           border-radius: 1rem;
+        }
+    }
+
+    .check-box{
+        width: 80%;
+        height: 5rem;
+        background-color: white;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,0.45) inset;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+font-size: 1.5rem;
+font-family: 'Inter', sans-serif;
+font-weight: 900;
+        }
+    }
+}

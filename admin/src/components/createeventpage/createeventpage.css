@@ -1,0 +1,128 @@
+.event-details{
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    button{
+      width: 10rem;
+      height: 3rem;
+      background-color: #fff;
+      border: none;
+      border-radius: .25rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      align-self: flex-end;
+      margin-bottom: 4rem;
+    }
+
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        row-gap: 1rem;
+
+        .custum-file-upload {
+            height: 10rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            gap: 20px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #e8e8e8;
+            background-color: #212121;
+            padding: 1.5rem;
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            align-self: center;
+          }
+          
+          .custum-file-upload .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .custum-file-upload .icon svg {
+            height: 80px;
+            fill: #e8e8e8;
+          }
+          
+          .custum-file-upload .text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .custum-file-upload .text span {
+            font-weight: 400;
+            color: #e8e8e8;
+          }
+          
+          .custum-file-upload input {
+            display: none;
+          }
+
+          input{
+            width: 100%;
+            height: 2.5rem;
+            border: none;
+            border-radius: .5rem;
+            background-color: rgba(128, 128, 128, 0.321);
+            padding-left: 1rem;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+          }
+
+          p{
+            margin-bottom: -.75rem;
+            font-family: 'Inter', sans-serif;
+            font-size: .9rem;
+          }
+
+          #about-evnt-input{
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 4rem;
+            border: none;
+            border-radius: .5rem;
+            background-color: rgba(128, 128, 128, 0.321);
+            padding: 1rem;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+          }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .event-details{
+        width: 95%;
+
+
+        .details{
+            input{
+                width: 100%;
+                outline: none;
+            }
+        }
+     
+    }
+}

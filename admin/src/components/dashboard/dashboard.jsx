@@ -3,8 +3,12 @@ import "./dashboard.css";
 import { ScanQrCode } from "lucide-react";
 import eventsadmin from "../../data1";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+
+  const navigate = useNavigate();
+
   const [isPast, setisPast] = useState(false);
 
   const handleToggle = (e) => {
@@ -44,8 +48,8 @@ const Dashboard = () => {
       </div>
 
       <div className="nav">
-        <button>Create Event</button>
-        <button id="qr-scan">
+        <button onClick={()=>navigate('/create-event')}>Create Event</button>
+        <button id="qr-scan" onClick={()=>navigate('/validate-qr')}>
           <ScanQrCode color="white" size={28} />
         </button>
       </div>

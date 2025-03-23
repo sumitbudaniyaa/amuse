@@ -4,6 +4,8 @@ import Login from './components/login/login'
 import Dashboard from './components/dashboard/dashboard'
 import Header from './components/header/header'
 import { useState } from 'react'
+import CreateEventPage from './components/createeventpage/createeventpage'
+import ScanPage from './components/scanqrpage/scanpage'
 
 function App() {
  
@@ -18,6 +20,8 @@ function App() {
       <Routes>
          <Route path='/' element={<Login setisLoggedIn={setisLoggedIn} />}></Route>
          <Route path='/dashboard' element={<Dashboard/>}></Route>
+         <Route path='/create-event' element={<CreateEventPage />}></Route>
+         <Route path='/validate-qr' element={<ScanPage />}></Route>
       </Routes>
       </>
   )
